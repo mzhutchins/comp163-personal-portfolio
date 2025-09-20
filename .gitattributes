@@ -1,2 +1,108 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+full_name = 'Jordan Smith'
+Student_email = ' jsmith@ncat.edu'
+hometown =  'Charlotte, NC'
+grad_semester = 'Spring 2028'
+major = 'Computer Science'
+
+current_course_list = ['COMP 163', 'MATH 150', 'ENG 101', 'HIS 105']
+compeleted_course_list = ['Biology', 'Chemistry', 'Calculus', 'Spanish II', 'World History']
+credit_hour = [3,3,3,3]
+GPA_history = [3.2,3.6,3.4,3.7]
+
+EMGR_con = ('Mom', "Hannah Smith", "704-555-0199")
+home_addy = ('456 Oak Street', 'Charlotte', 'NC 28202')
+iG_info = ('instagram', '@jordan_codes', 312)
+twit_info = ('Twitter', '@jorandev', 127)
+bday =('Birthday', 5, 22, 2006)
+
+cur_skill_set = {'Python basics', 'HTML', 'Problem solving', 'Time management', 'Photography'}
+skill_2_learn = {'JavaScript', 'Data structures', 'Git' , 'Web design', 'Public speaking'}
+career_int = {'Software development', 'Web development', 'Data science', 'Game development'}
+hobbies = {'Gaming', 'Photography', 'Reading', 'Soccer', 'Music'}
+enter_backlog = {'One Piece', 'Barry', 'Life', 'Incantation', 'Memento'}
+
+course_cred = { 'COMP 163': 3,
+                'MATH 150': 3,
+                'ENG 101': 3,
+                'HIS 105': 3}
+course_prof = {'COMP 163': 'Prof. Rhodes',
+               'MATH 150': 'Dr. Lee',
+               'ENG 101': 'Dr. Martinez',
+               'HIS 105': 'Dr. Brown'}
+course_room = {'COMP 163': 'M-Eric 300',
+               'MATH 150': 'Marteena 201',
+               'ENG 101': 'Crosby 121',
+               'HIS 105': 'Crosby 210'}
+month_bud = {'Food': 450,
+             'Entertainment': 200,
+             'Books': 125,
+             'Transportation': 100 }
+study_hrs = {'Programming': 10,
+             'Math': 8,
+             'English': 4,
+             'History': 3 }
+contact_direct = {'Mom': '704-555-0199',
+                  'Roommate': '336-5557821',
+                  'Academic Advisor': '336-334-5000'}
+
+total_current_credits = sum(credit_hour)
+cumulative_GPA = sum(GPA_history) / len(GPA_history)
+course_count = len(current_course_list)
+total_wks_study = study_hrs['Programming'] + study_hrs['Math'] + study_hrs['English'] + study_hrs['History']
+academic_load = total_current_credits + total_wks_study
+month_bud_total = month_bud['Food'] + month_bud['Entertainment'] + month_bud['Books'] + month_bud['Transportation']
+daily_food_bud = f'{(month_bud['Food'] / 30):.1f}'
+annual_bud = month_bud_total * 12
+study_cost_hrs = f'{(month_bud['Books'] / total_wks_study):.1f}'
+
+total_followers = iG_info[2] + twit_info[2]
+skill_compare_count = f"{len(cur_skill_set)}:{len(skill_2_learn)}"
+siz_contact_direct = len(contact_direct)
+count_enter_backlog = len(enter_backlog)
+
+print('================================================================')
+print('              PERSONAL ACADEMIC & LIFE PORTFOLIO')
+print('================================================================')
+print(f'Student: {full_name} | Email:{Student_email}')
+print(f'From: {hometown} | Graduating: {grad_semester}')
+print(f'Major: {major}')
+print()
+print('=== ACADEMIC PROFILE ===')
+print(f'Current Semester: {total_current_credits} credits across {course_count} courses')
+print(f'Cumulative GPA: {cumulative_GPA:.2f}')
+print(f'Weekly Study Time: {total_wks_study} hours')
+print(f'Academic Investment: ${study_cost_hrs} per study hour')
+print()
+print('Current Courses:')
+print(f'COMP 163 - {course_cred["COMP 163"]} credits - {course_prof["COMP 163"]} - {course_room["COMP 163"]}')
+print(f'MATH 150 - {course_cred["MATH 150"]} credits - {course_prof["MATH 150"]} - {course_room["MATH 150"]}')
+print(f'ENG 101 - {course_cred['ENG 101']} credits - {course_prof['ENG 101']} - {course_room["ENG 101"]}')
+print(f'HIS 105 - {course_cred['HIS 105']} credits - {course_prof['HIS 105']} - {course_room["HIS 105"]}')
+print()
+print('=== PERSONAL DEVELOPMENT ===')
+print(f'Current Skills: {cur_skill_set}')
+print(f'Learning Goals: {skill_2_learn}')
+print(f'Career Interests: {career_int}')
+print('Skills Currently Have:', len(cur_skill_set) )
+print('Skills Want to Learn:', len(skill_2_learn) )
+print()
+print('=== FINANCIAL OVERVIEW ===')
+print(f'Monthly Budget: ${month_bud_total}')
+print(f'Food: ${month_bud['Food']} (${daily_food_bud}/day)')
+print(f'Entertainment: ${month_bud['Entertainment']}')
+print(f'Books: ${month_bud['Books']}')
+print(f'Transportation: ${month_bud['Transportation']}')
+print(f'Annual Projection: ${annual_bud}')
+print()
+print('=== CONNECTIONS & CONTACTS ===')
+print(f'Emergency Contact: {EMGR_con[1]} (Mom) - {EMGR_con[2]}')
+print(f'Home Address: {home_addy[0]}, {home_addy[1]}, {home_addy[2]}')
+print(f'Social Media Presence: {total_followers} followers across 2 platforms')
+print(f'Key Contacts: {len(contact_direct)} people in directory')
+print()
+print('=== LIFE STATISTICS ===')
+print(f'Total Courses Completed: {len(compeleted_course_list)}')
+print(f'Current Academic Load: {academic_load} weekly commitments')
+print(f'Entertainment Backlog: {len(enter_backlog)} items')
+print(f'Current Hobbies: {len(hobbies)} activities')
+print('================================================================')
