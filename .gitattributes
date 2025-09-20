@@ -48,7 +48,7 @@ contact_direct = {'Mom': '704-555-0199',
 total_current_credits = sum(credit_hour)
 cumulative_GPA = sum(GPA_history) / len(GPA_history)
 course_count = len(current_course_list)
-total_wks_study = study_hrs['Programming'] + study_hrs['Math'] + study_hrs['English'] + study_hrs['History']
+total_wks_study = study_hrs['Programming'] + study_hrs['Math'] + study_hrs['ECEN'] + study_hrs['History']
 academic_load = total_current_credits + total_wks_study
 month_bud_total = month_bud['Food'] + month_bud['Entertainment'] + month_bud['Books'] + month_bud['Transportation']
 daily_food_bud = f'{(month_bud['Food'] / 30):.1f}'
@@ -75,9 +75,9 @@ print(f'Academic Investment: ${study_cost_hrs} per study hour')
 print()
 print('Current Courses:')
 print(f'COMP 163 - {course_cred["COMP 163"]} credits - {course_prof["COMP 163"]} - {course_room["COMP 163"]}')
-print(f'MATH 150 - {course_cred["MATH 150"]} credits - {course_prof["MATH 150"]} - {course_room["MATH 150"]}')
-print(f'ENG 101 - {course_cred['ENG 101']} credits - {course_prof['ENG 101']} - {course_room["ENG 101"]}')
-print(f'HIS 105 - {course_cred['HIS 105']} credits - {course_prof['HIS 105']} - {course_room["HIS 105"]}')
+print(f'MATH 131 - {course_cred["MATH 131"]} credits - {course_prof["MATH 131"]} - {course_room["MATH 131"]}')
+print(f'ENG 101 - {course_cred['ECEN 101']} credits - {course_prof['ECEN 101']} - {course_room["ECEN 101"]}')
+print(f'HIS 105 - {course_cred['HIS 207']} credits - {course_prof['HIS 207']} - {course_room["HIS 207"]}')
 print()
 print('=== PERSONAL DEVELOPMENT ===')
 print(f'Current Skills: {cur_skill_set}')
