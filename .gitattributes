@@ -9,17 +9,17 @@ compeleted_course_list = ['JAVA', 'Chemistry', 'Calculus', 'CAD', 'English']
 credit_hour = [3,4,3,3]
 GPA_history = [2.7,3.0,3.2,3.5]
 
-EMGR_con = ('Mom', "Hannah Smith", "704-555-0199")
-home_addy = ('456 Oak Street', 'Charlotte', 'NC 28202')
-iG_info = ('instagram', '@jordan_codes', 312)
-twit_info = ('Twitter', '@jorandev', 127)
-bday =('Birthday', 5, 22, 2006)
+EMGR_con = ('Mom', "Ebony Hutchins", "704-555-0199")
+home_addy = ('434 Golden Harvest loop', 'Cary', 'NC 27519')
+iG_info = ('instagram', '@hbk.cell', 1319)
+twit_info = ('Twitter', '@kishimoto_daB', 15)
+bday = ('Birthday', 2, 10, 2003)
 
-cur_skill_set = {'Python basics', 'HTML', 'Problem solving', 'Time management', 'Photography'}
-skill_2_learn = {'JavaScript', 'Data structures', 'Git' , 'Web design', 'Public speaking'}
-career_int = {'Software development', 'Web development', 'Data science', 'Game development'}
-hobbies = {'Gaming', 'Photography', 'Reading', 'Soccer', 'Music'}
-enter_backlog = {'One Piece', 'Barry', 'Life', 'Incantation', 'Memento'}
+cur_skill_set = {'Python basics', 'MATLAB', 'Problem solving', 'Time management', 'JAVA'}
+skill_2_learn = {'JavaScript', 'Data structures', 'Git' , 'App design', 'C+'}
+career_int = {'Software development', 'Chip Design', 'Data science', 'Circuit development'}
+hobbies = {'Gaming', 'Weightlifting', 'Reading', 'Anime', 'Music'}
+enter_backlog = {'One Piece', 'Side effects', 'Grand Blue', 'Dan Da Dan', 'Centuria'}
 
 course_cred = { 'COMP 163': 3,
                 'MATH 150': 3,
